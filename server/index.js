@@ -56,6 +56,21 @@ app.get('/products/:product_id', (req, res)=>{
   });
 });
 
+app.get('/productsMess/:product_id/styles', (req, res) => {
+  var id = req.params.product_id;
+  connection.getStylesPhotoSKU (id, (err, data)=>{
+    if (err) {
+      res.status(404).send(err);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
+
+
+
+
 
 app.get('/products/:product_id/styles', (req, res)=>{
   var id = req.params.product_id;

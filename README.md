@@ -8,4 +8,4 @@ Optimization 1: NGINX and Horizontal Scaling
 - results
 Optimization 2: Redis Caching
 
-NGINX, redis, mysql
+NGINX, redis, mysql, ec2

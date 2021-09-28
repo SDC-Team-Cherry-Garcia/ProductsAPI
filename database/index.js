@@ -5,6 +5,7 @@ const mysql = require('mysql');
 //'localhost'
 //host?
 //don't i need to specify ssh and my pem file somewhere
+//debug
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
